@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400;1,500;1,700&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal  ;
+    font-weight: 300;
+    src: url(https://static.contineljs.com/fonts/Roboto-Light.woff2) format("woff2"), url(https://static.contineljs.com/fonts/Roboto-Light.woff) format("woff")
+}
+
+@font-face{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://static.contineljs.com/fonts/Roboto-Regular.woff2) format("woff2"), url(https://static.contineljs.com/fonts/Roboto-Regular.woff) format("woff")
+}
+
+@font-face{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://static.contineljs.com/fonts/Roboto-Medium.woff2?v=2) format("woff2"), url(https://static.contineljs.com/fonts/Roboto-Medium.woff) format("woff")
+}
+
+@font-face{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://static.contineljs.com/fonts/Roboto-Bold.woff2) format("woff2"), url(https://static.contineljs.com/fonts/Roboto-Bold.woff) format("woff")
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+}
+
+.box{
+    &__container{
+        background-color: white;
+        width: 700px;
+        height: 490px;
+        margin: 0 auto;
+        border: 1px solid #a5a5a5;
+        border-radius: 10px;
+    }
+}
+
+.box{
+    &__brand{
+        display: flex;
+        margin: 15px;
+        &--left{
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+            .brand__left{
+                &--img{
+                    width: 35px;
+                    height: 35px;
+                }
+                &--title{
+                    width: 160px;
+                    height: 23px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #236c62;
+                }
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        &--first{
+        z-index: 99;
+        right: 0;
+        margin: 15px;
+        width: 211px;
+        height: 350px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 7px rgba(136, 136, 136, 025);
+        border-radius: 5px;
+        .content__first{
+            flex: 1;
+            margin: 15px;
+            &--img{
+                box-sizing: border-box;
+                width: 181px;
+                height: 181px;
+                border: 1px solid #cdcdcd;
+                border-radius: 5px;
+                flex: 1;
+                margin: 10px;
+            }
+            &--title{
+                
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 130%;
+                color: #333333;
+                margin: 15px;
+            }
+            &--card{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 120%;
+                color: #555555;
+                margin: 10px;
+            }
+            &--rectangle{
+                width: 97px;
+                height: 23px;
+                background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%),#20C8A7;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                margin: 45px;
+                text-align: center;
+                line-height: 26px;
+                p{
+                    color: #FFFFFF;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 11px;
+                }
+            }
+        }
+        }
+        &--second{
+            z-index: 99;
+            right: 0;
+            margin: 15px;
+            width: 211px;
+            height: 350px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 7px rgba(136, 136, 136, 025);
+            border-radius: 5px;
+        }
+        .content__second{
+            flex: 1;
+            margin: 15px;
+            &--img{
+                box-sizing: border-box;
+                width: 181px;
+                height: 181px;
+                border: 1px solid #cdcdcd;
+                border-radius: 5px;
+                flex: 1;
+                margin: 10px;
+            }
+            &--title{
+                
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 130%;
+                color: #333333;
+                margin: 15px;
+            }
+            &--card{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 120%;
+                color: #555555;
+                margin: 10px;
+            }
+            &--rectangle{
+                width: 97px;
+                height: 23px;
+                background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%),#20C8A7;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                margin: 45px;
+                text-align: center;
+                line-height: 26px;
+                p{
+                    color: #FFFFFF;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 11px;
+                }
+            }
+        }
+        &--third{
+            z-index: 99;
+            right: 0;
+            margin: 15px;
+            width: 211px;
+            height: 350px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 7px rgba(136, 136, 136, 025);
+            border-radius: 5px;
+        }
+        .content__third{
+            flex: 1;
+            margin: 15px;
+            &--img{
+                box-sizing: border-box;
+                width: 181px;
+                height: 181px;
+                border: 1px solid #cdcdcd;
+                border-radius: 5px;
+                flex: 1;
+                margin: 10px;
+            }
+            &--title{
+                
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 130%;
+                color: #333333;
+                margin: 15px;
+            }
+            &--card{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 120%;
+                color: #555555;
+                margin: 10px;
+            }
+            &--rectangle{
+                width: 97px;
+                height: 23px;
+                background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%),#20C8A7;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                margin: 45px;
+                text-align: center;
+                line-height: 26px;
+                p{
+                    color: #FFFFFF;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    &__footer{
+        display: flex;
+        &--rectangle{
+            position: absolute;
+            width: 700px;
+            height: 78px;
+            background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%), #20C8A7;
+            border-radius: 10px;
+            margin-top: -42px;
+        }
+        &--notice{
+            position: relative;
+            margin-left: 100px;
+            height: 24px;
+            font-style: italic;
+            font-size: 10px;
+            line-height: 40px;
+            color: #FFFFFF;
+        }
+    }
+}
