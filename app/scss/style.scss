@@ -73,9 +73,9 @@ body{
             }
         }
     }
-    &__content{
+    &__layout{
         display: flex;
-        &--first{
+        &--content{
         z-index: 99;
         right: 0;
         margin: 15px;
@@ -84,7 +84,7 @@ body{
         background: #FFFFFF;
         box-shadow: 0px 0px 7px rgba(136, 136, 136, 025);
         border-radius: 5px;
-        .content__first{
+        .layout__content{
             flex: 1;
             margin: 15px;
             &--img{
@@ -131,117 +131,117 @@ body{
             }
         }
         }
-        &--second{
-            z-index: 99;
-            right: 0;
-            margin: 15px;
-            width: 200px;
-            height: 300px;
-            background: #FFFFFF;
-            box-shadow: 0px 0px 7px rgba(136, 136, 136, 025);
-            border-radius: 5px;
-        }
-        .content__second{
-            flex: 1;
-            margin: 15px;
-            &--img{
-                box-sizing: border-box;
-                width: 181px;
-                height: 181px;
-                border: 1px solid #cdcdcd;
-                border-radius: 5px;
-                flex: 1;
-                margin: 10px 10px 0px 10px;
-            }
-            &--title{
+        // &--second{
+        //     z-index: 99;
+        //     right: 0;
+        //     margin: 15px;
+        //     width: 200px;
+        //     height: 300px;
+        //     background: #FFFFFF;
+        //     box-shadow: 0px 0px 7px rgba(136, 136, 136, 025);
+        //     border-radius: 5px;
+        // }
+        // .content__second{
+        //     flex: 1;
+        //     margin: 15px;
+        //     &--img{
+        //         box-sizing: border-box;
+        //         width: 181px;
+        //         height: 181px;
+        //         border: 1px solid #cdcdcd;
+        //         border-radius: 5px;
+        //         flex: 1;
+        //         margin: 10px 10px 0px 10px;
+        //     }
+        //     &--title{
                 
-                font-style: normal;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 130%;
-                color: #333333;
-                margin: 7px 10px 0px 15px;
-            }
-            &--card{
-                font-style: normal;
-                font-weight: 400;
-                font-size: 11px;
-                line-height: 120%;
-                color: #555555;
-                margin: 5px 10px 0px 10px;
-            }
-            &--rectangle{
-                width: 97px;
-                height: 23px;
-                background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%),#20C8A7;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 10px;
-                margin: 5px 10px 0px 50px;
-                text-align: center;
-                line-height: 26px;
-                p{
-                    color: #FFFFFF;
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 11px;
-                }
-            }
-        }
-        &--third{
-            z-index: 99;
-            right: 0;
-            margin: 15px;
-            width: 200px;
-            height: 300px;
-            background: #FFFFFF;
-            box-shadow: 0px 0px 7px rgba(136, 136, 136, 025);
-            border-radius: 5px;
-        }
-        .content__third{
-            flex: 1;
-            margin: 15px;
-            &--img{
-                box-sizing: border-box;
-                width: 181px;
-                height: 181px;
-                border: 1px solid #cdcdcd;
-                border-radius: 5px;
-                flex: 1;
-                margin: 10px 10px 0px 10px;
-            }
-            &--title{
+        //         font-style: normal;
+        //         font-weight: bold;
+        //         font-size: 14px;
+        //         line-height: 130%;
+        //         color: #333333;
+        //         margin: 7px 10px 0px 15px;
+        //     }
+        //     &--card{
+        //         font-style: normal;
+        //         font-weight: 400;
+        //         font-size: 11px;
+        //         line-height: 120%;
+        //         color: #555555;
+        //         margin: 5px 10px 0px 10px;
+        //     }
+        //     &--rectangle{
+        //         width: 97px;
+        //         height: 23px;
+        //         background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%),#20C8A7;
+        //         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        //         border-radius: 10px;
+        //         margin: 5px 10px 0px 50px;
+        //         text-align: center;
+        //         line-height: 26px;
+        //         p{
+        //             color: #FFFFFF;
+        //             font-style: normal;
+        //             font-weight: 700;
+        //             font-size: 11px;
+        //         }
+        //     }
+        // }
+        // &--third{
+        //     z-index: 99;
+        //     right: 0;
+        //     margin: 15px;
+        //     width: 200px;
+        //     height: 300px;
+        //     background: #FFFFFF;
+        //     box-shadow: 0px 0px 7px rgba(136, 136, 136, 025);
+        //     border-radius: 5px;
+        // }
+        // .content__third{
+        //     flex: 1;
+        //     margin: 15px;
+        //     &--img{
+        //         box-sizing: border-box;
+        //         width: 181px;
+        //         height: 181px;
+        //         border: 1px solid #cdcdcd;
+        //         border-radius: 5px;
+        //         flex: 1;
+        //         margin: 10px 10px 0px 10px;
+        //     }
+        //     &--title{
                 
-                font-style: normal;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 130%;
-                color: #333333;
-                margin: 7px 10px 0px 15px;
-            }
-            &--card{
-                font-style: normal;
-                font-weight: 400;
-                font-size: 11px;
-                line-height: 120%;
-                color: #555555;
-                margin: 5px 10px 0px 10px;
-            }
-            &--rectangle{
-                width: 97px;
-                height: 23px;
-                background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%),#20C8A7;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 10px;
-                margin: 5px 10px 0px 50px;
-                text-align: center;
-                line-height: 26px;
-                p{
-                    color: #FFFFFF;
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 11px;
-                }
-            }
+        //         font-style: normal;
+        //         font-weight: bold;
+        //         font-size: 14px;
+        //         line-height: 130%;
+        //         color: #333333;
+        //         margin: 7px 10px 0px 15px;
+        //     }
+        //     &--card{
+        //         font-style: normal;
+        //         font-weight: 400;
+        //         font-size: 11px;
+        //         line-height: 120%;
+        //         color: #555555;
+        //         margin: 5px 10px 0px 10px;
+        //     }
+        //     &--rectangle{
+        //         width: 97px;
+        //         height: 23px;
+        //         background: radial-gradient(143.96% 215.88% at 45.83% 54.55%, rgba(11, 24, 27, 0.5) 0%, rgba(24, 121, 104, 0.5) 51.28%, rgba(0, 200, 164, 0.5) 100%),#20C8A7;
+        //         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        //         border-radius: 10px;
+        //         margin: 5px 10px 0px 50px;
+        //         text-align: center;
+        //         line-height: 26px;
+        //         p{
+        //             color: #FFFFFF;
+        //             font-style: normal;
+        //             font-weight: 700;
+        //             font-size: 11px;
+        //         }
+        //     }
         }
     }
     &__footer{
@@ -280,4 +280,4 @@ body{
             color: #FFFFFF;
         }
     }
-}
+
