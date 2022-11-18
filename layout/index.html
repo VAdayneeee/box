@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="app/css/style.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
 </head>
 <body>
     <box>
@@ -28,9 +33,7 @@
                     </div>
                     <div class="layout__content--title">TDPVSK Kim Não Khang</div>
                     <div class="layout__content--card">
-                        <p>Không còn đau đầu, chóng mặt, mất</p>
-                        <p>ngủ. Chiết xuất từ thảo dược 100%</p>
-                        <p>thiên nhiên</p>
+                        Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên
                     </div>
                     <div class="layout__content--rectangle">
                         <p>TÌM HIỂU NGAY</p>
@@ -56,9 +59,7 @@
                     </div>
                     <div class="layout__content--title">TDPVSK Kim Não Khang</div>
                     <div class="layout__content--card">
-                        <p>Không còn đau đầu, chóng mặt, mất</p>
-                        <p>ngủ. Chiết xuất từ thảo dược 100%</p>
-                        <p>thiên nhiên</p>
+                        Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên
                     </div>
                     <div class="layout__content--rectangle">
                         <p>TÌM HIỂU NGAY</p>
@@ -70,28 +71,68 @@
                     </div>
                     <div class="layout__content--title">TDPVSK Kim Não Khang</div>
                     <div class="layout__content--card">
-                        <p>Không còn đau đầu, chóng mặt, mất</p>
-                        <p>ngủ. Chiết xuất từ thảo dược 100%</p>
-                        <p>thiên nhiên</p>
+                        Không còn đau đầu, chóng mặt, mất ngủ. Chiết xuất từ thảo dược 100% thiên nhiên
                     </div>
                     <div class="layout__content--rectangle">
                         <p>TÌM HIỂU NGAY</p>
                     </div>
+                </div>
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+    
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
                 </div>
             </div>
             <div class="box__footer">
                 <div class="box__footer--rectangle">
-                    <div class="footer__rectangle--bullet">
+                    <!-- <div class="footer__rectangle--bullet">
                         <label class="content__bullet active" for="radio1"></label>
                         <label class="content__bullet" for="radio2"></label>
                         <label class="content__bullet" for="radio3">    </label>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="box__footer--notice">
                     <b>Khuyến cáo: </b>Sản phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh
                 </div>
             </div>
+            <!-- <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div> -->
         </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
     </box>
 </body>
 </html>
