@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400;1,500;1,700&display=swap");
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://static.contineljs.com/fonts/Roboto-Light.woff2) format("woff2"), url(https://static.contineljs.com/fonts/Roboto-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://static.contineljs.com/fonts/Roboto-Regular.woff2) format("woff2"), url(https://static.contineljs.com/fonts/Roboto-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://static.contineljs.com/fonts/Roboto-Medium.woff2?v=2) format("woff2"), url(https://static.contineljs.com/fonts/Roboto-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://static.contineljs.com/fonts/Roboto-Bold.woff2) format("woff2"), url(https://static.contineljs.com/fonts/Roboto-Bold.woff) format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+
+.box__container {
+  background-color: white;
+  width: 660px;
+  height: 330px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid #A5A5A5;
+}
+
+.box__brand {
+  display: flex;
+  margin: 15px;
+}
+.box__brand--left {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.box__brand--left .brand__left--img {
+  width: 35px;
+  height: 35px;
+}
+.box__brand--left .brand__left--title {
+  width: 160px;
+  height: 21px;
+}
+.box__brand--left .brand__left--title p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0640D2;
+}
+.box__brand--right {
+  flex: 1;
+}
+.box__brand--right .brand__right--img {
+  width: 82.36px;
+  height: 32px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left: 200px;
+}
+
+.box__content--rec {
+  background: #0640D2;
+  position: absolute;
+  z-index: 0;
+  width: 660px;
+  height: 133px;
+  margin-top: 50px;
+}
+
+.box__center {
+  display: flex;
+}
+.box__center--left {
+  width: 324px;
+  height: 182.1px;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.1));
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+  margin-top: 15px;
+}
+.box__center--right {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  width: 288px;
+  height: 182px;
+  background: #FFFFFF;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.1));
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
